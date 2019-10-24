@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Clicktime</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="jumbotron">
+            <h1 class="display-4">Stopwatch</h1>
+            <p class="lead">This is a simple (offline!) stopwatch web app for the ClickTime Intern Challenge. Start the timer,
+                close the tab and come back whenever you want to. Your data is stored in your browser. 
+            </p>
+            <hr class="my-4">
+            <p>               <button id="reset" type="button" class="btn btn-danger" onclick="reset()">Reset</button>
+                at your own risk.</p>
+            
+    </div>
+    <table>
+        <tr>
+            <button id="timer" type="button" class="btn btn-success btn-block" align-left="left" onclick="addEntry()">Start</button>
+        </tr>
+    </table>
+    
+    <table id="history_table"></table>
+    <div class="card">
+        <div class="card-body">
+            Made by Shashank Rammoorthy.
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
